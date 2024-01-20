@@ -1,5 +1,5 @@
 # build stage
-FROM golang:1.21.0-bookworm AS build-env
+FROM golang:1.21-bookworm AS build-env
 ADD . /src
 ENV CGO_ENABLED=0
 WORKDIR /src
